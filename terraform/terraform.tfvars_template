@@ -1,0 +1,4 @@
+aws_secretkey = ""
+aws_accesskey = ""
+aws_dns_zone = "example.com."
+ssh_key_name = "access_key"

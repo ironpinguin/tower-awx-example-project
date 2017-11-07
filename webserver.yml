@@ -1,0 +1,8 @@
+---
+- hosts: nginx
+  roles:
+    - jdauphant.nginx
+
+- hosts: php
+  roles:
+    - jtcraftsmanpl.php7
