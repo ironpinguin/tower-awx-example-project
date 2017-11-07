@@ -1,8 +1,10 @@
 ---
 - hosts: nginx
+  become: true
   roles:
     - jdauphant.nginx
 
 - hosts: php
+  become: true
   roles:
     - itcraftsmanpl.php7

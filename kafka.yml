@@ -1,4 +1,5 @@
 ---
 - hosts: kafka-systems
+  become: true
   roles:
     - jaytaylor.kafka
