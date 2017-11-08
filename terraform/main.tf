@@ -78,7 +78,7 @@ resource "aws_instance" "awx_host" {
     inline = [
       "sudo apt update",
       "sudo apt upgrade -y",
-      "sudo apt install -y python python-apt apt-transport-https ca-certificates curl software-properties-common git",
+      "sudo apt install -y python python-apt apt-transport-https ca-certificates curl software-properties-common git openjdk-8-jdk-headless",
     ]
 
     connection {
