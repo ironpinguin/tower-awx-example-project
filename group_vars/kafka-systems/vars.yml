@@ -1,3 +1,10 @@
 ---
-kafka_hosts: "{{ groups.kafka | list }}"
-kafka_zookeeper_hosts: "{{ zookeeper_hosts | list }}"
+kafka_hosts:
+  - aws-0.awx.yflower.de
+  - aws-1.awx.yflower.de
+  - aws-2.awx.yflower.de
+  - aws-3.awx.yflower.de
+kafka_zookeeper_hosts:
+  - aws-0.awx.yflower.de
+  - aws-2.awx.yflower.de
+  - aws-3.awx.yflower.de

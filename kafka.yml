@@ -2,9 +2,8 @@
 - hosts: kafka-systems
   become: true
 
-  vars:
-    kafka_hosts: "{{ groups.kafka | list }}"
-    kafka_zookeeper_hosts: "{{ zookeeper_hosts | list }}"
+  vars_files:
+    - group_vars/kafka-systems/vars.yml
 
   roles:
     - jaytaylor.kafka
