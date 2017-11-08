@@ -3,7 +3,7 @@
   become: true
 
   vars_files:
-    group_vars/kafka-systems/vars.yml
+    - group_vars/kafka-systems/vars.yml
 
   roles:
     - jaytaylor.kafka
