@@ -1,12 +1,18 @@
 ---
 - hosts: nginx
   become: true
-  become_user: root
+
+  vars_files:
+    - group_vars/nginx/vars.yml
+
   roles:
     - jdauphant.nginx
 
 - hosts: php
   become: true
-  become_user: root
+
+  vars_files:
+    - group_vars/php/vars.yml
+
   roles:
     - itcraftsmanpl.php7

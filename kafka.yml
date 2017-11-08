@@ -1,6 +1,9 @@
 ---
 - hosts: kafka-systems
   become: true
-  become_user: root
+
+  vars_files:
+    group_vars/kafka-systems/vars.yml
+
   roles:
     - jaytaylor.kafka
